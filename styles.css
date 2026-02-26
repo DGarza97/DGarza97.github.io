@@ -1,0 +1,132 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #e6f2ff;
+}
+
+.navbar {
+    width: 100%;
+    background-color: white;
+    color: #1da1f2;
+    padding: 15px 20px;
+    font-size: 20px;
+    font-weight: bolder;
+    text-align: center;
+    border-bottom: solid;
+    border-color: lightblue;
+}
+
+.container {
+    max-width: 600px;
+    margin: 40px auto;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-style: solid;
+    border-color: lightblue;
+}
+
+.tweet-box {
+    background: white;
+    padding: 20px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.tweet-row {
+    display: flex;
+    gap: 10px;
+    align-items: flex-start;
+    
+}
+
+.profile-pic {
+    width: 50px;
+    height: 50px;
+    background: lightgray;
+    border-radius: 50%;
+    flex-shrink: 0;
+}
+
+textarea {
+    flex: 1;
+    resize: none;
+    padding: 10px;
+    font-size: 16px;
+    height: 100px;
+    border-style: none;
+    outline: none
+    
+}
+
+.tweet-controls {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 15px;
+    font-weight: bold;
+}
+
+button {
+    background-color: #1da1f2;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #0d8ddb;
+}
+
+button:disabled {
+    background-color: gray;
+    cursor: not-allowed;
+}
+
+.divider {
+    width: 50%; 
+    height: 2px;
+    background-color: #e6f2ff;
+}
+
+.posted-tweet {
+    background: white;
+    padding: 20px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    display: flex;
+    gap: 15px;
+
+}
+
+.tweet-header span {
+    color: gray;
+    margin-left: 5px;
+}
+
+.tweet-icons {
+    margin-top: 10px;
+    display: flex;
+    gap: 15px;
+    color: gray;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    .container {
+        margin: 20px;
+        padding: 10px;
+    }
+
+    textarea {
+        height: 80px;
+    }
+}
+    

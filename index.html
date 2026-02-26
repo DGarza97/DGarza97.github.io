@@ -1,1 +1,55 @@
-Hello, test
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tweeter</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div>Tweeter</div>
+    </nav>
+
+    <main class="container">
+        <section class="tweet-box">
+            <div class="tweet-row">
+                <div class="profile-pic"></div>
+
+                <textarea id="tweetInput" placeholder="What's happening?"></textarea>
+            </div>
+
+            <div class="tweet-controls">
+                <span id="charCount">160 char remaining</span>
+                <button id="tweetBtn">Tweet</button>
+            </div>
+        </section>
+
+        <div class="divider"></div>
+        
+        <!-- Sample Posted Tweet -->
+        <section class="posted-tweet">
+            <div class="profile-pic"></div>
+
+            <div class="tweet-content">
+                <div class="tweet-header">
+                    <strong>Antonio Daniel Garza</strong>
+                    <span>@antonio.utrgv</span>
+                    <span>- 5hr</span>
+                </div>
+
+                <p>Hey! CSCI 3342 is cool!</p>
+
+                <div class="tweet-icons">
+                    <span>💬</span>
+                    <span>🔁</span>
+                    <span>🔗</span>
+                    <span>⬆️</span>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
