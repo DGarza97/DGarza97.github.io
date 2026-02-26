@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
     margin: 0;
     font-family: Arial, sans-serif;
@@ -19,6 +23,8 @@ body {
 .container {
     max-width: 600px;
     margin: 40px auto;
+    width: 100%;
+    padding: 0;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     border-bottom-left-radius: 10px;
@@ -50,6 +56,8 @@ body {
     background: lightgray;
     border-radius: 50%;
     flex-shrink: 0;
+    
+
 }
 
 textarea {
@@ -103,7 +111,11 @@ button:disabled {
     border-bottom-right-radius: 10px;
     display: flex;
     gap: 15px;
+}
 
+.tweet-content {
+    flex: 1;
+    min-width: 0;
 }
 
 .tweet-header span {
@@ -114,15 +126,22 @@ button:disabled {
 .tweet-icons {
     margin-top: 10px;
     display: flex;
-    gap: 15px;
+    justify-content: space-between;
     color: gray;
+    align-items: center;
+    width: 100%;
 }
 
 /* Responsive */
 @media (max-width: 600px) {
     .container {
-        margin: 20px;
-        padding: 10px;
+        width: 100%;
+        align-items: center;
+
+    }
+    .tweet-box,
+    .posted-tweet {
+        padding: 15px;
     }
 
     textarea {
