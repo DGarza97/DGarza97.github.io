@@ -11,7 +11,7 @@ function updateCharacterCount() {
         charCount.style.color = "red";
         tweetBtn.disabled = true;
     } else {
-        charCount.textContent = `${remaining} char remaining`;
+        charCount.textContent = remaining + " char remaining";
         charCount.style.color = "black";
         tweetBtn.disabled = false;
     }
