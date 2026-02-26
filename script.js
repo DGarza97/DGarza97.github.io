@@ -1,10 +1,10 @@
 const tweetInput = document.getElementById("tweetInput");
 const charCount = document.getElementById("charCount");
 const tweetBtn = document.getElementById("tweetBtn");
-const max = 160;
+const maxChar = 160;
 
 function updateCharacterCount() {
-    const remaining = max - tweetInput.value.length;
+    const remaining = maxChar - tweetInput.value.length;
 
     if (remaining < 0) {
         charCount.textContent = "160 character limit exceeded!";
@@ -18,7 +18,7 @@ function updateCharacterCount() {
 }
 
 function validateTweet() {
-    if (tweetInput.value.length > max) {
+    if (tweetInput.value.length > maxChar) {
         tweetBtn.disabled = true;
     } else {
         tweetBtn.disabled = false;
